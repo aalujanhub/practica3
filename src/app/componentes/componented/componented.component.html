@@ -1,0 +1,29 @@
+<button  (click)=getvalor()> valor</button>
+<div *ngIf='bandera'>
+ <img src="/assets/imagenes/duck.jpg">
+</div>
+
+<h4>PRACTICA WIII</h4>
+
+<ul *ngFor="let person of gente"
+    [ngSwitch]="person.pais"> 
+
+  <li appDirectivap3 *ngSwitchCase="'BO'"
+      style="color:green">{{ person.nom }} ({{ person.pais }})
+  </li>
+  <li appDirectivap3  *ngSwitchCase="'USA'"
+   style="color:red">{{ person.nom }} ({{ person.pais }})
+  </li>
+  <!-- <li *ngSwitchCase="'HK'"
+      class="text-danger">{{ person.nom }} ({{ person.pais }})
+  </li>
+  <li *ngSwitchDefault (3)
+      class="text-warning">{{ person.nom }} ({{ person.pais }})
+  </li> -->
+</ul>
+<div>
+       <button appDirectivap3> directiva boton componente</button>
+        <p appDirectivap3> directiva n componente</p>
+       <h1 appDirectivap3>directiva en titulo componente</h1>
+</div>
+

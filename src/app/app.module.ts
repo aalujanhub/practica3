@@ -3,10 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ComponentedComponent } from './componentes/componented/componented.component';
+import { Directivap3Directive } from './directivas/directivap3.directive';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ComponentedComponent,
+    Directivap3Directive
   ],
   imports: [
     BrowserModule,
